@@ -11,6 +11,33 @@
 <body>
 	<div class="layout">
 		<header class="topbar">
+			<div class="topbar__top">
+				<form class="topbar__search" action="#">
+					<label for="search">
+						<span class="material-symbols-outlined">search</span>
+					</label>
+					<input type="text" name="search" id="search">
+				</form>
+				<div class="topbar__notifications">
+					<span class="material-symbols-outlined">notifications</span>
+				</div>
+				<div class="topbar__profile">
+					<img class="topbar__profile-image" src="assets/profile.jpg" alt="">
+					<p class="topbar__profile-name">John Doe</p>
+				</div>
+			</div>
+			<div class="topbar__bottom">
+				<div class="topbar__header">
+					<img src="assets/profile.jpg" alt="">
+					<p>Hi there,</p>
+					<h2>John Doe (@john234)</h2>
+				</div>
+				<div class="topbar__actions">
+					<button>New</button>
+					<button>Upload</button>
+					<button>Share</button>
+				</div>
+			</div>
 		</header>
 		<aside class="sidebar">
 			<div class="sidebar__brand">
