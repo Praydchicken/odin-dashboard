@@ -48,6 +48,7 @@ body {
 
 .content {
 	grid-area: content;
+	padding-inline-start: 48px;
 }
 
 .sidebar__brand {
@@ -179,4 +180,46 @@ body {
 
 .topbar__actions button:hover {
 	background-color: var(--clr-secondary);
+}
+
+.content__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	height: 100%;
+	padding: 12px 24px;
+	border-radius: 8px;
+	border-left: 8px solid var(--clr-primary);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card__title {
+	font-size: 1.25rem;
+	margin: 8px;
+}
+
+.card__text {
+	flex: 1;
+	margin: 4px;
+	overflow: hidden;
+	display: -webkit-box;
+	line-clamp: 4;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+.card__actions {
+	display: flex;
+	gap: 12px;
+	justify-content: flex-end;
+}
+
+.card__actions a {
+	color: var(--clr-secondary);
 }
