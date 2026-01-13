@@ -21,7 +21,7 @@ body {
 }
 
 .layout {
-	min-block-size: 100vh;
+	max-block-size: 100vh;
 }
 
 .layout {
