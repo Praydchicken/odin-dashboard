@@ -37,6 +37,7 @@ body {
 
 .topbar {
 	grid-area: topbar;
+	padding-inline: 48px;
 }
 
 .sidebar {
