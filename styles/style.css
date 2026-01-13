@@ -21,10 +21,6 @@ body {
 }
 
 .layout {
-	max-block-size: 100vh;
-}
-
-.layout {
 	display: grid;
 	grid-template-columns: 1fr 4fr 1.5fr;
 	grid-template-rows: 1fr 2fr 2fr;
@@ -33,6 +29,7 @@ body {
 		"sidebar content sidepanel"
 		"sidebar content sidepanel"
 	;
+	block-size: 100vh;
 }
 
 .topbar {
